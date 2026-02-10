@@ -30,10 +30,10 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* SEO */}
-      <title>Philipp's Biohack – Biohacking ohne Bullshit | Stoffwechsel &amp; CO₂</title>
+      <title>Philipp's Biohack – Biohacking ohne Bullshit</title>
       <meta
         name="description"
-        content="Alltagstaugliche Biohacking-Checks: Stoffwechsel-Quiz & CO₂-Check fürs Homeoffice. Finde heraus, wo du Energie verlierst – kostenlos und in 2 Minuten."
+        content="Stoffwechsel-Quiz & CO₂-Check: Finde in 2 Min. heraus, wo du Energie verlierst. Alltagstaugliches Biohacking – kostenlos starten."
       />
 
       <Header />
