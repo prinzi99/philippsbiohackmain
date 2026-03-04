@@ -15,7 +15,7 @@ const topTopics = [
     title: "Stoffwechsel-Quiz (2 Minuten)",
     description: "Finde heraus, was deinen Stoffwechsel aktuell ausbremst.",
     buttonText: "Ergebnis holen",
-    href: "https://stoffwechsel.philippsbiohack.de/",
+    href: "https://stoffwechsel.philippsbiohack.de/quiz?utm_source=hub",
     badge: "Beliebt",
   },
   {
