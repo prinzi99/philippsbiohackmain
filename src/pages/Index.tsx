@@ -11,20 +11,20 @@ import FAQSection from "@/components/FAQSection";
 import { Zap, Wind } from "lucide-react";
 
 const topTopics = [
-  {
-    title: "Stoffwechsel-Quiz (2 Minuten)",
-    description: "Finde heraus, was deinen Stoffwechsel aktuell ausbremst.",
-    buttonText: "Ergebnis holen",
-    href: "https://stoffwechsel.philippsbiohack.de/quiz?utm_source=hub",
-    badge: "Beliebt",
-  },
-  {
-    title: "Schlechte Luft im Homeoffice?",
-    description: "CO₂ ist der unsichtbare Produktivitäts-Killer. Hier ist der Schnellstart.",
-    buttonText: "Luftqualität checken",
-    href: "https://start.philippsbiohack.de/co2-meter/schlechteluft",
-  },
-];
+{
+  title: "Stoffwechsel-Quiz (2 Minuten)",
+  description: "Finde heraus, was deinen Stoffwechsel aktuell ausbremst.",
+  buttonText: "Ergebnis holen",
+  href: "https://stoffwechsel.philippsbiohack.de/quiz?utm_source=hub",
+  badge: "Beliebt"
+},
+{
+  title: "Schlechte Luft im Homeoffice?",
+  description: "CO₂ ist der unsichtbare Produktivitäts-Killer. Hier ist der Schnellstart.",
+  buttonText: "Luftqualität checken",
+  href: "https://start.philippsbiohack.de/co2-meter/schlechteluft"
+}];
+
 
 const Index = () => {
   return (
@@ -33,8 +33,8 @@ const Index = () => {
       <title>Philipp's Biohack – Biohacking ohne Bullshit</title>
       <meta
         name="description"
-        content="Stoffwechsel-Quiz & CO₂-Check: Finde in 2 Min. heraus, wo du Energie verlierst. Alltagstaugliches Biohacking – kostenlos starten."
-      />
+        content="Stoffwechsel-Quiz & CO₂-Check: Finde in 2 Min. heraus, wo du Energie verlierst. Alltagstaugliches Biohacking – kostenlos starten." />
+      
 
       <Header />
 
@@ -59,9 +59,9 @@ const Index = () => {
       <section className="pb-12 lg:pb-16">
         <div className="container px-4">
           <div className="max-w-2xl mx-auto grid gap-4">
-            {topTopics.map((topic) => (
-              <TopicCard key={topic.title} {...topic} />
-            ))}
+            {topTopics.map((topic) =>
+            <TopicCard key={topic.title} {...topic} />
+            )}
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@ const Index = () => {
                 Biohacking heißt für uns: messen, verstehen, optimieren – mit einfachen Mitteln, die in den Alltag passen. Keine extremen Experimente, keine teuren Gadgets.
               </p>
               <p>
-                Die meisten Menschen haben ihr Basispotenzial noch gar nicht ausgeschöpft. Deshalb fangen wir bei den einfachen Hebeln an: Stoffwechsel, Luftqualität, Schlaf.
+                Die meisten Menschen haben ihr Basispotenzial noch gar nicht ausgeschöpft. Deshalb fangen wir bei den einfachen Hebeln an: Stoffwechsel, Luftqualität und Schlaf.
               </p>
             </div>
           </div>
@@ -127,9 +127,9 @@ const Index = () => {
               Kommt laufend dazu – hier entstehen neue Checks und Tools.
             </p>
             <div className="grid gap-4">
-              {topTopics.map((topic) => (
-                <TopicCard key={`more-${topic.title}`} {...topic} />
-              ))}
+              {topTopics.map((topic) =>
+              <TopicCard key={`more-${topic.title}`} {...topic} />
+              )}
             </div>
           </div>
         </div>
@@ -139,8 +139,8 @@ const Index = () => {
       <FAQSection />
 
       <Footer />
-    </main>
-  );
+    </main>);
+
 };
 
 export default Index;
