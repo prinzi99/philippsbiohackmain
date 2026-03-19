@@ -109,7 +109,7 @@ const Index = () => {
                 <Zap className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span>
                   <strong>Wenn du abnehmen willst oder stagnierst:</strong>{" "}
-                  <a href="https://stoffwechsel.philippsbiohack.de/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                  <a href={withUtm("https://stoffwechsel.philippsbiohack.de?utm_source=hub")} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
                     Stoffwechsel-Quiz
                   </a>
                 </span>
