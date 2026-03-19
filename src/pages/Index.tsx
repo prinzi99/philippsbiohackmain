@@ -140,7 +140,7 @@ const Index = () => {
             </p>
             <div className="grid gap-4">
               {topTopics.map((topic) =>
-              <TopicCard key={`more-${topic.title}`} {...topic} />
+              <TopicCard key={`more-${topic.title}`} {...topic} href={withUtm(topic.href)} />
               )}
             </div>
           </div>
