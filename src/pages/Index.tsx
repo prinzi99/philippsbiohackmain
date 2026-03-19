@@ -10,6 +10,7 @@ import TopicCard from "@/components/TopicCard";
 import FAQSection from "@/components/FAQSection";
 import { Zap, Wind } from "lucide-react";
 import buchCover from "@/assets/buch-cover.jpeg";
+import { useUtmParams } from "@/hooks/use-utm-params";
 
 const topTopics = [
 {
@@ -36,6 +37,8 @@ const topTopics = [
 
 
 const Index = () => {
+  const { withUtm } = useUtmParams();
+
   return (
     <main className="min-h-screen bg-background">
       {/* SEO */}
@@ -69,7 +72,7 @@ const Index = () => {
         <div className="container px-4">
           <div className="max-w-2xl mx-auto grid gap-4">
             {topTopics.map((topic) =>
-            <TopicCard key={topic.title} {...topic} />
+            <TopicCard key={topic.title} {...topic} href={withUtm(topic.href)} />
             )}
           </div>
         </div>
@@ -106,7 +109,7 @@ const Index = () => {
                 <Zap className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span>
                   <strong>Wenn du abnehmen willst oder stagnierst:</strong>{" "}
-                  <a href="https://stoffwechsel.philippsbiohack.de/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                  <a href={withUtm("https://stoffwechsel.philippsbiohack.de?utm_source=hub")} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
                     Stoffwechsel-Quiz
                   </a>
                 </span>
@@ -115,7 +118,7 @@ const Index = () => {
                 <Wind className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span>
                   <strong>Wenn du im Homeoffice müde bist:</strong>{" "}
-                  <a href="https://start.philippsbiohack.de/co2-meter/schlechteluft" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                  <a href={withUtm("https://start.philippsbiohack.de/co2-meter/schlechteluft")} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
                     CO₂-Check
                   </a>
                 </span>
@@ -137,7 +140,7 @@ const Index = () => {
             </p>
             <div className="grid gap-4">
               {topTopics.map((topic) =>
-              <TopicCard key={`more-${topic.title}`} {...topic} />
+              <TopicCard key={`more-${topic.title}`} {...topic} href={withUtm(topic.href)} />
               )}
             </div>
           </div>
