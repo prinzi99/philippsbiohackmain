@@ -118,7 +118,7 @@ const Index = () => {
                 <Wind className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span>
                   <strong>Wenn du im Homeoffice müde bist:</strong>{" "}
-                  <a href="https://start.philippsbiohack.de/co2-meter/schlechteluft" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                  <a href={withUtm("https://start.philippsbiohack.de/co2-meter/schlechteluft")} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
                     CO₂-Check
                   </a>
                 </span>
