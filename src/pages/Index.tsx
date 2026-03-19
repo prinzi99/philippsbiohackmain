@@ -37,6 +37,8 @@ const topTopics = [
 
 
 const Index = () => {
+  const { withUtm } = useUtmParams();
+
   return (
     <main className="min-h-screen bg-background">
       {/* SEO */}
