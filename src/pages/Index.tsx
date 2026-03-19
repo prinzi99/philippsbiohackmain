@@ -72,7 +72,7 @@ const Index = () => {
         <div className="container px-4">
           <div className="max-w-2xl mx-auto grid gap-4">
             {topTopics.map((topic) =>
-            <TopicCard key={topic.title} {...topic} />
+            <TopicCard key={topic.title} {...topic} href={withUtm(topic.href)} />
             )}
           </div>
         </div>
