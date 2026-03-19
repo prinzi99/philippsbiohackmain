@@ -19,6 +19,13 @@ const topTopics = [
   badge: "Beliebt"
 },
 {
+  title: "Stoffwechsel-Buch",
+  description: "Die wichtigsten Hebel für deinen Stoffwechsel – kompakt und alltagstauglich in einem Buch.",
+  buttonText: "Zum Buch",
+  href: "https://stoffwechsel.philippsbiohack.de/buch?utm_source=hub",
+  badge: "Neu"
+},
+{
   title: "Schlechte Luft im Homeoffice?",
   description: "CO₂ ist der unsichtbare Produktivitäts-Killer. Hier ist der Schnellstart.",
   buttonText: "Luftqualität checken",
