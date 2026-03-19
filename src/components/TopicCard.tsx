@@ -18,16 +18,7 @@ const TopicCard = ({ title, description, buttonText, href, badge, image }: Topic
       className="group block bg-card rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
     >
       <div className={image ? "flex flex-col sm:flex-row" : ""}>
-        {image && (
-          <div className="sm:w-36 shrink-0">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-48 sm:h-full object-cover"
-            />
-          </div>
-        )}
-        <div className="p-6">
+        <div className="p-6 flex-1">
           {badge && (
             <span className="inline-block text-xs font-medium bg-primary/10 text-primary px-2.5 py-1 rounded-full mb-3">
               {badge}
@@ -40,6 +31,15 @@ const TopicCard = ({ title, description, buttonText, href, badge, image }: Topic
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
           </span>
         </div>
+        {image && (
+          <div className="sm:w-36 shrink-0">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-48 sm:h-full object-cover"
+            />
+          </div>
+        )}
       </div>
     </a>
   );
