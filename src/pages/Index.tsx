@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import TopicCard from "@/components/TopicCard";
 import FAQSection from "@/components/FAQSection";
 import { Zap, Wind } from "lucide-react";
+import buchCover from "@/assets/buch-cover.jpeg";
 
 const topTopics = [
 {
@@ -23,7 +24,8 @@ const topTopics = [
   description: "Die wichtigsten Hebel für deinen Stoffwechsel – kompakt und alltagstauglich in einem Buch.",
   buttonText: "Zum Buch",
   href: "https://stoffwechsel.philippsbiohack.de/buch?utm_source=hub",
-  badge: "Neu"
+  badge: "Neu",
+  image: buchCover
 },
 {
   title: "Schlechte Luft im Homeoffice?",
