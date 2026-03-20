@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import TopicCard from "@/components/TopicCard";
 import FAQSection from "@/components/FAQSection";
 import { Zap, Wind } from "lucide-react";
-import { SiPinterest, SiTiktok, SiYoutube } from "react-icons/si";
+import { Youtube } from "lucide-react";
 import buchCover from "@/assets/buch-cover.jpeg";
 import { useUtmParams } from "@/hooks/use-utm-params";
 
