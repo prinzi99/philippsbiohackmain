@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import TopicCard from "@/components/TopicCard";
 import FAQSection from "@/components/FAQSection";
 import { Zap, Wind } from "lucide-react";
+import { SiPinterest, SiTiktok, SiYoutube } from "react-icons/si";
 import buchCover from "@/assets/buch-cover.jpeg";
 import { useUtmParams } from "@/hooks/use-utm-params";
 
@@ -60,9 +61,38 @@ const Index = () => {
             <p className="text-base md:text-lg text-muted-foreground mb-3 leading-relaxed text-balance">
               Alltagstaugliche Checks und Tools, die dir zeigen, wo du Energie verlierst – und was du zuerst fixen solltest.
             </p>
-            <p className="text-xs text-muted-foreground/70">
+            <p className="text-xs text-muted-foreground/70 mb-5">
               Hinweis: Kein medizinischer Rat. Nur Selbstreflexion &amp; allgemeine Information.
             </p>
+            <div className="flex items-center justify-center gap-4">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pinterest"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <SiPinterest className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <SiTiktok className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <SiYoutube className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
