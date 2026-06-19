@@ -106,7 +106,7 @@ const KompassBiohackingTools = () => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
