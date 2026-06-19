@@ -124,12 +124,29 @@ const KompassBiohackingTools = () => {
                       </div>
                       {group.items.length > 0 && (
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          {group.items.map((it) => (
-                            <div key={it.name} className="rounded-lg border border-border/40 p-3">
-                              <p className="text-sm font-medium text-foreground">{it.name}</p>
-                              <p className="text-xs text-muted-foreground">{it.desc}</p>
-                            </div>
-                          ))}
+                          {group.items.map((it) => {
+                            const content = (
+                              <>
+                                <p className="text-sm font-medium text-foreground">{it.name}</p>
+                                <p className="text-xs text-muted-foreground">{it.desc}</p>
+                              </>
+                            );
+                            return it.href ? (
+                              <a
+                                key={it.name}
+                                href={it.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="rounded-lg border border-border/40 p-3 hover:bg-accent/5 transition-colors block"
+                              >
+                                {content}
+                              </a>
+                            ) : (
+                              <div key={it.name} className="rounded-lg border border-border/40 p-3">
+                                {content}
+                              </div>
+                            );
+                          })}
                         </div>
                       )}
                     </CardContent>
