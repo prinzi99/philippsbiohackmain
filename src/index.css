@@ -166,9 +166,21 @@
   --gradient-cta: linear-gradient(135deg, hsl(170 65% 42%) 0%, hsl(175 60% 48%) 100%);
   --shadow-cta: 0 8px 32px -8px hsl(170 65% 42% / 0.4);
 
+  /* Warm accents (universell, nicht geschlechtsspezifisch) */
+  --warm-cream: 30 100% 97%;
+  --warm-beige: 36 33% 96%;
+  --warm-apricot: 22 100% 93%;
+
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+.kompass-theme .bg-warm-cream { background-color: hsl(var(--warm-cream)); }
+.kompass-theme .bg-warm-beige { background-color: hsl(var(--warm-beige)); }
+.kompass-theme .bg-warm-apricot { background-color: hsl(var(--warm-apricot)); }
+.kompass-theme .hero-warm-gradient {
+  background: linear-gradient(180deg, hsl(var(--warm-cream)) 0%, hsl(var(--background)) 100%);
 }
 
 .kompass-theme h1,
