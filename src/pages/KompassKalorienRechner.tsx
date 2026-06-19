@@ -43,6 +43,7 @@ const KompassKalorienRechner = () => {
         )}
 
         <CalcInfoSections />
+        <KompassCrossNav current="rechner" />
       </main>
 
       <Footer />
