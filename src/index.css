@@ -128,4 +128,17 @@
   .shadow-cta {
     box-shadow: var(--shadow-cta);
   }
+
+  .section-padding {
+    @apply py-12 md:py-16 px-5 md:px-8;
+  }
+
+  .container-narrow {
+    @apply container max-w-3xl;
+  }
+
+  .container-wide {
+    @apply container max-w-6xl;
+  }
 }
+
