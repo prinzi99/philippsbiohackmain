@@ -1,51 +1,71 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BiohackingHero from "@/components/biohacking/BiohackingHero";
-import BiohackingCategory from "@/components/biohacking/BiohackingCategory";
-import { Utensils, Activity, Moon, Lightbulb, ArrowLeft } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ArrowLeft, ExternalLink, Sparkles } from "lucide-react";
 
-const categories = [
+const tiers = [
   {
-    icon: Utensils,
-    title: "Ernährung & Energie verstehen",
-    intro:
-      "Viele Menschen unterschätzen oder überschätzen ihre Kalorienaufnahme. Ernährungstracker können helfen, ein realistisches Gefühl für Portionen und Makronährstoffe zu entwickeln.",
-    tools: [
-      { title: "MyFitnessPal", description: "Beliebter Ernährungstracker mit sehr großer Lebensmitteldatenbank." },
-      { title: "Yazio", description: "Sehr verbreiteter Ernährungstracker im deutschsprachigen Raum mit übersichtlicher Makroanalyse." },
-      { title: "Cronometer", description: "Ernährungstracker mit besonders detaillierter Nährstoffanalyse." },
+    badge: "Kostenlos starten",
+    color: "bg-emerald-100 text-emerald-700 border-emerald-300/50",
+    groups: [
+      {
+        title: "Ernährungstracker",
+        hint: "Du brauchst nur eine App. Such dir aus, was dir gefällt.",
+        items: [
+          { name: "MyFitnessPal", desc: "Am bekanntesten, riesige Datenbank." },
+          { name: "Yazio", desc: "Deutsch, übersichtlich." },
+          { name: "Cronometer", desc: "Sehr detailliert, für Fortgeschrittene." },
+        ],
+      },
+      {
+        title: "Schritte & Bewegung",
+        hint: "Die Handy-App reicht völlig (Apple Health, Google Fit).",
+        items: [],
+      },
     ],
   },
   {
-    icon: Activity,
-    title: "Aktivität & Energieverbrauch",
-    intro: "Alltagsbewegung und Trainingsbelastung beeinflussen den Energieverbrauch stärker, als viele vermuten.",
-    tools: [
-      { title: "Garmin Fitnessuhren", description: "Fitnessuhren zur Messung von Aktivität, Herzfrequenz und Trainingsbelastung." },
-      { title: "Apple Watch", description: "Smartwatch mit umfassendem Aktivitäts- und Gesundheits-Tracking." },
-      { title: "Polar Fitnessuhren", description: "Beliebt für Trainingsanalyse und Herzfrequenzmessung." },
+    badge: "Sinnvoll, wenn du genauer messen willst",
+    color: "bg-amber-100 text-amber-700 border-amber-300/50",
+    groups: [
+      {
+        title: "Fitnessuhren & Ringe",
+        hint: "Kein Muss. Hilfreich, wenn du Schlaf, Schritte und Erholung besser verstehen willst.",
+        items: [
+          { name: "Garmin", desc: "Gut für Training." },
+          { name: "Apple Watch", desc: "Gut für Alltag & Schlaf." },
+          { name: "Oura Ring", desc: "Fokussiert auf Regeneration." },
+          { name: "Polar", desc: "Gut für Sport." },
+        ],
+      },
+      {
+        title: "Schlaftracking",
+        hint: "Schlaf ist zentral. Ein Tracker zeigt dir, ob dein Körper wirklich erholt.",
+        items: [
+          { name: "Oura Ring", desc: "Schlaf & Erholung." },
+          { name: "Whoop Band", desc: "Belastung & Recovery." },
+          { name: "Apple Watch / Garmin", desc: "Reichen oft schon aus." },
+        ],
+      },
     ],
   },
   {
-    icon: Moon,
-    title: "Schlaf & Regeneration",
-    intro: "Schlaf beeinflusst Hunger, Energie, hormonelle Regulation und Trainingsleistung.",
-    tools: [
-      { title: "Oura Ring", description: "Ring zur Analyse von Schlaf, HRV und Erholungsstatus." },
-      { title: "Whoop Band", description: "Tracker zur Analyse von Belastung, Erholung und Schlafqualität." },
-    ],
-  },
-  {
-    icon: Lightbulb,
-    title: "Umgebung & Biohacking",
-    intro: "Auch kleine Umweltfaktoren können Einfluss auf Energie und Schlaf haben.",
-    tools: [
-      { title: "CO₂-Messgerät", description: "Hilft dabei, die Luftqualität in Innenräumen zu überwachen." },
-      { title: "Blaulichtfilter-Brillen", description: "Können helfen, abends störendes Bildschirmlicht zu reduzieren." },
-      { title: "Tageslichtlampen", description: "Unterstützen natürliche Lichtsignale im Alltag." },
+    badge: "Optional für Fortgeschrittene",
+    color: "bg-sky-100 text-sky-700 border-sky-300/50",
+    groups: [
+      {
+        title: "Umgebung & Optimierung",
+        hint: "Wenn Schlaf, Ernährung und Bewegung sitzen, kannst du hier feintunen. Keine Priorität.",
+        items: [
+          { name: "CO₂-Messgerät", desc: "Für gute Raumluft." },
+          { name: "Blaulichtfilter-Brille", desc: "Für Abendbildschirme." },
+          { name: "Tageslichtlampe", desc: "Für Winter oder fensterlose Büros." },
+        ],
+      },
     ],
   },
 ];
@@ -53,27 +73,83 @@ const categories = [
 const KompassBiohackingTools = () => {
   return (
     <div className="kompass-theme min-h-screen flex flex-col">
-      <title>Biohacking & Tools | Kompass</title>
-        <meta name="description" content="Apps, Geräte und einfache Hilfsmittel zur Selbstbeobachtung." />
-        <meta name="robots" content="noindex, nofollow" />
+      <title>Empfohlene Tools | Kompass</title>
+      <meta name="description" content="Empfohlene Apps, Tracker und Geräte – nach Priorität sortiert." />
+      <meta name="robots" content="noindex, nofollow" />
 
       <Header />
 
       <main className="flex-grow">
         <BiohackingHero />
 
-        {categories.map((cat) => (
-          <BiohackingCategory key={cat.title} {...cat} />
-        ))}
+        <section className="px-5 md:px-8 pb-12 md:pb-16">
+          <div className="container-narrow space-y-10">
+            {tiers.map((tier) => (
+              <div key={tier.badge} className="space-y-4">
+                <Badge variant="outline" className={`text-xs px-3 py-1 ${tier.color}`}>
+                  {tier.badge}
+                </Badge>
+                {tier.groups.map((group) => (
+                  <Card key={group.title} className="border-border/40 shadow-sm">
+                    <CardContent className="p-5 md:p-6 space-y-4">
+                      <div className="space-y-1">
+                        <h3 className="font-semibold text-foreground">{group.title}</h3>
+                        <p className="text-sm text-muted-foreground italic">{group.hint}</p>
+                      </div>
+                      {group.items.length > 0 && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          {group.items.map((it) => (
+                            <div key={it.name} className="rounded-lg border border-border/40 p-3">
+                              <p className="text-sm font-medium text-foreground">{it.name}</p>
+                              <p className="text-xs text-muted-foreground">{it.desc}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ))}
 
-        <section className="section-padding pt-8 md:pt-12">
-          <div className="container-narrow">
-            <Card className="border-border/40 bg-card/80 shadow-none">
-              <CardContent className="p-5 md:p-6 space-y-2 text-center">
-                <h3 className="font-semibold text-foreground text-sm">Tools sind nur Hilfsmittel</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto">
-                  Diese Tools sollen dir helfen, Muster zu erkennen und dein eigenes System besser zu verstehen.
-                  Sie ersetzen jedoch weder dein Körpergefühl noch gesunden Menschenverstand.
+            {/* Foodpunk */}
+            <Card className="border-accent/40 bg-accent/5 shadow-sm">
+              <CardContent className="p-6 md:p-8 space-y-4">
+                <div className="flex items-center gap-2">
+                  <Sparkles className="w-5 h-5 text-accent" />
+                  <Badge variant="outline" className="text-xs px-3 py-1 bg-accent/10 text-accent border-accent/30">
+                    Personalisierte Unterstützung
+                  </Badge>
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-foreground">
+                  Foodpunk – wenn du einen Plan willst, der wirklich passt
+                </h3>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  Wenn du dir einen durchdachten, individualisierten Ernährungsplan wünschst, statt
+                  selbst zu rechnen und zu planen, ist Foodpunk eine ausgezeichnete Wahl. Speziell
+                  für Frauen 40+ mit Stoffwechselproblemen bietet Foodpunk:
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {[
+                    "Personalisierte Pläne basierend auf deinen Daten",
+                    "Klare Mahlzeiten-Vorschläge (kein ewiges Rätselraten)",
+                    "Wöchentliche Anpassungen",
+                    "Support bei Stagnation oder Unsicherheit",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+                <Button variant="cta" size="lg" asChild>
+                  <a href="https://foodpunk.de" target="_blank" rel="noopener noreferrer">
+                    Mehr über Foodpunk erfahren
+                    <ExternalLink className="w-4 h-4 ml-1" />
+                  </a>
+                </Button>
+                <p className="text-xs text-muted-foreground/70">
+                  Hinweis: Affiliate-Empfehlung. Für dich entstehen keine zusätzlichen Kosten.
                 </p>
               </CardContent>
             </Card>
@@ -85,19 +161,14 @@ const KompassBiohackingTools = () => {
             <Button variant="ctaSecondary" asChild>
               <Link to="/kompass">
                 <ArrowLeft className="w-4 h-4 mr-1" />
-                Zurück zum Kompass
+                Zurück
               </Link>
             </Button>
           </div>
         </section>
 
         <section className="px-5 md:px-8 pb-16 md:pb-20">
-          <div className="container-narrow space-y-3">
-            <p className="text-xs text-muted-foreground text-center leading-relaxed max-w-lg mx-auto">
-              Einige der Links auf dieser Seite sind sogenannte Affiliate-Links. Wenn du über diese Links ein
-              Produkt kaufst, erhalte ich möglicherweise eine kleine Provision. Für dich entstehen dadurch keine
-              zusätzlichen Kosten.
-            </p>
+          <div className="container-narrow">
             <p className="text-xs text-muted-foreground/70 text-center leading-relaxed max-w-lg mx-auto">
               Die Inhalte dieser Seite dienen der Information und ersetzen keine medizinische Beratung.
             </p>
