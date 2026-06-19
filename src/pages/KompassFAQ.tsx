@@ -9,36 +9,44 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 interface FAQItem {
+  id: string;
   q: string;
   a: React.ReactNode;
 }
 
 const faqItems: FAQItem[] = [
   {
+    id: "gewicht-stagniert",
     q: "Was mache ich, wenn mein Gewicht trotz Defizit stagniert?",
     a: "Beobachte zwei Wochen. Prüfe Schlaf, Stress und Periode. Senke nicht sofort die Kalorien – manchmal braucht der Körper Stabilität statt Verschärfung.",
   },
   {
+    id: "kalorien-beobachten",
     q: "Wie lange sollte ich meine Kalorien beobachten, bevor ich etwas ändere?",
     a: "Mindestens zwei Wochen. Dein Gewicht schwankt täglich durch Wasser, Hormone und Salz. Der Trend zählt, nicht der einzelne Wert.",
   },
   {
+    id: "jeden-tag-tracken",
     q: "Muss ich jeden Tag tracken?",
     a: "Nein. Tracken ist ein Werkzeug, kein Gesetz. 3–5 Tage reichen oft, um ein Gefühl zu bekommen. Danach kannst du schätzen oder intuitiv essen.",
   },
   {
+    id: "was-ist-wichtiger",
     q: "Was ist wichtiger: Kalorien, Protein, Schritte oder Schlaf?",
     a: "Schlaf ist die Basis. Ohne Schlaf leidet alles andere. Dann Protein (für Sättigung und Muskeln). Dann Kalorien. Schritte sind Bonus, kein Muss.",
   },
   {
+    id: "staendig-muede",
     q: "Was bedeutet es, wenn ich ständig müde bin?",
     a: "Zu wenig Kalorien, zu wenig Schlaf, zu viel Stress oder eine hormonelle Anpassung. Schau in den Selbstcheck. Müdigkeit ist ein Signal, kein Versagen.",
   },
   {
+    id: "aggressives-defizit",
     q: "Wann ist ein Defizit zu aggressiv?",
     a: "Wenn du ständig müde bist, schlecht schläfst, obsessiv ans Essen denkst oder deine Leistung sinkt. Ein Defizit sollte sich nachhaltig anfühlen, nicht wie Bestrafung.",
   },
   {
+    id: "koerperfett",
     q: "Wie bestimme ich mein Körperfett?",
     a: (
       <div className="space-y-3">
@@ -63,10 +71,12 @@ const faqItems: FAQItem[] = [
     ),
   },
   {
+    id: "welche-werte",
     q: "Welche Werte sollte ich messen, ohne mich verrückt zu machen?",
     a: "Gewichtstrend (nicht täglich wiegen!), Umfang alle 2 Wochen, Energie-Level subjektiv und Schlaf. Mehr ist optional. Weniger Daten, mehr Gefühl.",
   },
   {
+    id: "individuelle-unterstuetzung",
     q: "Wann brauche ich individuelle Unterstützung?",
     a: "Wenn du seit Wochen stagnierst, dich überfordert fühlst oder nicht weißt, was du ändern sollst. Ein durchdachter Ernährungsplan mit Struktur kann dann der nächste Schritt sein.",
   },
