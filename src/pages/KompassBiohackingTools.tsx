@@ -83,6 +83,15 @@ const KompassBiohackingTools = () => {
       <main className="flex-grow">
         <BiohackingHero />
 
+        <section className="px-5 md:px-8 pb-6 md:pb-8">
+          <div className="container-narrow">
+            <p className="text-xs text-muted-foreground/70 text-center leading-relaxed max-w-xl mx-auto">
+              Hinweis: Einige der auf dieser Seite genannten Produkte sind Affiliate-Empfehlungen.
+              Für dich entstehen dadurch keine zusätzlichen Kosten.
+            </p>
+          </div>
+        </section>
+
         <section className="px-5 md:px-8 pb-12 md:pb-16">
           <div className="container-narrow space-y-10">
             {tiers.map((tier) => (
@@ -149,9 +158,6 @@ const KompassBiohackingTools = () => {
                     <ExternalLink className="w-4 h-4 ml-1" />
                   </a>
                 </Button>
-                <p className="text-xs text-muted-foreground/70">
-                  Hinweis: Affiliate-Empfehlung. Für dich entstehen keine zusätzlichen Kosten.
-                </p>
               </CardContent>
             </Card>
           </div>
