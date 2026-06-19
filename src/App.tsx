@@ -8,6 +8,7 @@ import CookieBanner from "@/components/CookieBanner";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
 import Index from "./pages/Index";
 import Impressum from "./pages/Impressum";
+import Kompass from "./pages/Kompass";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 
