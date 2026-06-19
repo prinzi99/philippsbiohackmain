@@ -158,9 +158,6 @@ const KompassBiohackingTools = () => {
                     <ExternalLink className="w-4 h-4 ml-1" />
                   </a>
                 </Button>
-                <p className="text-xs text-muted-foreground/70">
-                  Hinweis: Affiliate-Empfehlung. Für dich entstehen keine zusätzlichen Kosten.
-                </p>
               </CardContent>
             </Card>
           </div>
