@@ -56,10 +56,16 @@ const tiers = [
         title: "Gewicht & Körperfett",
         hint: "Wenn du deine Körperkomposition genau tracken willst – nicht nur das Gewicht auf der Waage.",
         items: [
-          { name: "Withings Body+", desc: "WLAN-Waage mit Körperfett-, Muskelmasse- & Wasseranteil." },
-          { name: "Garmin Index S2", desc: "Smarte Waage, ideal wenn du schon im Garmin-Ökosystem bist." },
-          { name: "Slim Guide Caliper", desc: "Günstige & robuste Körperfettzange für Falzmessung zu Hause." },
-          { name: "Harpenden Caliper", desc: "Professionelle Klinikzange – sehr präzise, aber teurer." },
+          {
+            name: "Auswahl an guten Körperfettwaagen",
+            desc: "Elektroimpedanzwaagen für zu Hause – einfach, schnell und reproduzierbar.",
+            href: "#",
+          },
+          {
+            name: "Caliper Körperfettzange",
+            desc: "Für die manuelle Falzmessung – präzise, wenn du die Technik beherrschst.",
+            href: "#",
+          },
         ],
       },
     ],
