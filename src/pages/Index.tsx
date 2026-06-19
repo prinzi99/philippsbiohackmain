@@ -110,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* What is Biohacking */}
-      <section className="py-12 lg:py-16 bg-secondary/50">
+      <section className="py-12 lg:py-16 bg-warm-beige">
         <div className="container px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="font-display text-xl font-bold text-foreground mb-4">
