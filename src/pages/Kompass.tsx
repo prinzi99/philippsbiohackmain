@@ -100,7 +100,7 @@ const recommendedTools = [
 
 const Kompass = () => {
   return (
-    <>
+    <div className="kompass-theme min-h-screen flex flex-col">
       <title>Kompass | Philipp's Biohack</title>
         <meta
           name="description"
@@ -261,7 +261,7 @@ const Kompass = () => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

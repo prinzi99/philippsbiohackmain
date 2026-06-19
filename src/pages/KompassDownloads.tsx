@@ -91,7 +91,7 @@ const categories: DownloadCategoryProps[] = [
 
 const KompassDownloads = () => {
   return (
-    <>
+    <div className="kompass-theme min-h-screen flex flex-col">
       <title>Downloads & Checklisten | Kompass</title>
         <meta name="description" content="Praktische Materialien zur Umsetzung." />
         <meta name="robots" content="noindex, nofollow" />
@@ -156,7 +156,7 @@ const KompassDownloads = () => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

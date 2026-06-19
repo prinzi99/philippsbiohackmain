@@ -52,7 +52,7 @@ const categories = [
 
 const KompassBiohackingTools = () => {
   return (
-    <>
+    <div className="kompass-theme min-h-screen flex flex-col">
       <title>Biohacking & Tools | Kompass</title>
         <meta name="description" content="Apps, Geräte und einfache Hilfsmittel zur Selbstbeobachtung." />
         <meta name="robots" content="noindex, nofollow" />

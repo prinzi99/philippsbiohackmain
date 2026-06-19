@@ -23,7 +23,7 @@ const KompassKalorienRechner = () => {
   };
 
   return (
-    <>
+    <div className="kompass-theme min-h-screen flex flex-col">
       <title>Kalorien- & Makro-Rechner | Kompass</title>
         <meta name="description" content="Berechne deinen Kalorienbedarf und eine sinnvolle Makroverteilung." />
         <meta name="robots" content="noindex, nofollow" />
@@ -45,7 +45,7 @@ const KompassKalorienRechner = () => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

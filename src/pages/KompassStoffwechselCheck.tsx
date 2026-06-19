@@ -39,7 +39,7 @@ const KompassStoffwechselCheck = () => {
   };
 
   return (
-    <>
+    <div className="kompass-theme min-h-screen flex flex-col">
       <title>Stoffwechsel-Reset Check | Kompass</title>
         <meta name="description" content="Finde heraus, ob dein Stoffwechsel aktuell unter Stress, Anpassung oder Stabilität läuft." />
         <meta name="robots" content="noindex, nofollow" />
@@ -66,7 +66,7 @@ const KompassStoffwechselCheck = () => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
