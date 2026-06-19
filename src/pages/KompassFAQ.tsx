@@ -83,6 +83,23 @@ const faqItems: FAQItem[] = [
 ];
 
 const KompassFAQ = () => {
+  const [openItem, setOpenItem] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+      const item = faqItems.find((f) => f.id === hash);
+      if (item) {
+        setOpenItem(hash);
+        // Optional: smooth-scroll to the item
+        setTimeout(() => {
+          const el = document.querySelector(`[data-value="${hash}"]`);
+          el?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="kompass-theme min-h-screen flex flex-col">
       <title>FAQ – Kompass | Philipp's Biohack</title>
@@ -108,11 +125,18 @@ const KompassFAQ = () => {
 
         <section className="px-5 md:px-8 pb-12">
           <div className="container-narrow">
-            <Accordion type="single" collapsible className="w-full space-y-2">
-              {faqItems.map((item, i) => (
+            <Accordion
+              type="single"
+              collapsible
+              value={openItem}
+              onValueChange={setOpenItem}
+              className="w-full space-y-2"
+            >
+              {faqItems.map((item) => (
                 <AccordionItem
-                  key={i}
-                  value={`item-${i}`}
+                  key={item.id}
+                  value={item.id}
+                  data-value={item.id}
                   className="border border-border/50 rounded-xl px-4 bg-card"
                 >
                   <AccordionTrigger className="text-left text-sm md:text-base font-medium text-foreground hover:no-underline">
