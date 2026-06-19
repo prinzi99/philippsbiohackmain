@@ -7,7 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const faqItems = [
+interface FAQItem {
+  q: string;
+  a: React.ReactNode;
+}
+
+const faqItems: FAQItem[] = [
   {
     q: "Was mache ich, wenn mein Gewicht trotz Defizit stagniert?",
     a: "Beobachte zwei Wochen. Prüfe Schlaf, Stress und Periode. Senke nicht sofort die Kalorien – manchmal braucht der Körper Stabilität statt Verschärfung.",
@@ -31,6 +36,26 @@ const faqItems = [
   {
     q: "Wann ist ein Defizit zu aggressiv?",
     a: "Wenn du ständig müde bist, schlecht schläfst, obsessiv ans Essen denkst oder deine Leistung sinkt. Ein Defizit sollte sich nachhaltig anfühlen, nicht wie Bestrafung.",
+  },
+  {
+    q: "Wie bestimme ich mein Körperfett?",
+    a: (
+      <div className="space-y-3">
+        <p>Es gibt mehrere Wege – von der Schätzung bis zur technischen Messung:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><strong>Visuell schätzen:</strong> Am einfachsten vergleichst du dich mit Referenzbildern im Netz. Das reicht für den Anfang und kostet nichts.</li>
+          <li>
+            <strong>Falzmessung (Caliper):</strong> Mit einer Hautfalzange misst du die Fett­dicke an definierten Stellen und berechnest daraus den Körperfettanteil. Günstig und für zu Hause gut geeignet.
+            <span className="affiliate-link-caliper block mt-1 text-xs text-muted-foreground italic">(Affiliate-Link folgt)</span>
+          </li>
+          <li>
+            <strong>Elektroimpedanzwaage:</strong> Misst den Widerstand des Körpers und schätzt Fett- und Muskelanteil. Sehr komfortabel, aber Werte können durch Wasser- und Salzhaushalt schwanken – am besten immer unter gleichen Bedingungen (morgens, nüchtern) messen.
+            <span className="affiliate-link-waage block mt-1 text-xs text-muted-foreground italic">(Affiliate-Link folgt)</span>
+          </li>
+          <li><strong>Beim Fachpersonal:</strong> Viele Ärzte, Ernährungsberater und Sportwissenschaftler bieten professionelle Körperfett-Messungen an – z. B. per Caliper oder bioelektrische Impedanzanalyse mit hochwertigeren Geräten.</li>
+        </ul>
+      </div>
+    ),
   },
   {
     q: "Welche Werte sollte ich messen, ohne mich verrückt zu machen?",
