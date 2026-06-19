@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, HelpCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import KompassCrossNav from "@/components/kompass/KompassCrossNav";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
