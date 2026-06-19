@@ -168,6 +168,8 @@ const KompassBiohackingTools = () => {
           </div>
         </section>
 
+        <KompassCrossNav current="tools" />
+
         <section className="px-5 md:px-8 pb-16 md:pb-20">
           <div className="container-narrow">
             <p className="text-xs text-muted-foreground/70 text-center leading-relaxed max-w-lg mx-auto">
