@@ -101,14 +101,12 @@ const recommendedTools = [
 const Kompass = () => {
   return (
     <>
-      <Helmet>
-        <title>Kompass | Philipp's Biohack</title>
+      <title>Kompass | Philipp's Biohack</title>
         <meta
           name="description"
           content="Kompass – Tools, Rechner und Ressourcen."
         />
         <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
 
       <Header />
 

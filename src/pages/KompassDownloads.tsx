@@ -92,11 +92,9 @@ const categories: DownloadCategoryProps[] = [
 const KompassDownloads = () => {
   return (
     <>
-      <Helmet>
-        <title>Downloads & Checklisten | Kompass</title>
+      <title>Downloads & Checklisten | Kompass</title>
         <meta name="description" content="Praktische Materialien zur Umsetzung." />
         <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
 
       <Header />
 
