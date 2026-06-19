@@ -87,7 +87,7 @@ const KompassFAQ = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-8 pb-16">
+        <section className="px-5 md:px-8 pb-8">
           <div className="container-narrow">
             <Button variant="outline" asChild className="w-full sm:w-auto">
               <Link to="/kompass">
@@ -96,6 +96,8 @@ const KompassFAQ = () => {
             </Button>
           </div>
         </section>
+
+        <KompassCrossNav current="faq" />
       </main>
 
       <Footer />
