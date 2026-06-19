@@ -1,6 +1,5 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/landing/Footer";
+import Footer from "@/components/Footer";
 import BiohackingHero from "@/components/biohacking/BiohackingHero";
 import BiohackingCategory from "@/components/biohacking/BiohackingCategory";
 import { Utensils, Activity, Moon, Lightbulb, ArrowLeft } from "lucide-react";

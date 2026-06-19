@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import {
   Activity,
   Calculator,
@@ -17,8 +16,8 @@ import {
   Heart,
 } from "lucide-react";
 import Header from "@/components/Header";
-import Footer from "@/components/landing/Footer";
-import bookCoverMockup from "@/assets/book-cover-mockup.jpeg";
+import Footer from "@/components/Footer";
+import buchCover from "@/assets/buch-cover.jpeg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -135,7 +134,7 @@ const Kompass = () => {
 
               <div className="hidden md:block shrink-0">
                 <img
-                  src={bookCoverMockup}
+                  src={buchCover}
                   alt="Du bist nicht das Problem – Buchcover"
                   className="w-[120px] lg:w-[140px] h-auto rounded-lg shadow-sm opacity-90"
                   loading="eager"

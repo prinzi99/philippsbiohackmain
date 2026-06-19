@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/landing/Footer";
+import Footer from "@/components/Footer";
 import CalcHero from "@/components/calculator/CalcHero";
 import CalcInputForm from "@/components/calculator/CalcInputForm";
 import CalcResults from "@/components/calculator/CalcResults";
