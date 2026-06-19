@@ -8,6 +8,7 @@ import CookieBanner from "@/components/CookieBanner";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
 import Index from "./pages/Index";
 import Impressum from "./pages/Impressum";
+import Kompass from "./pages/Kompass";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 
@@ -23,6 +24,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/impressum" element={<Impressum />} />
+            <Route path="/kompass" element={<Kompass />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

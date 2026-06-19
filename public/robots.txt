@@ -1,14 +1,19 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /kompass
 
 User-agent: Bingbot
 Allow: /
+Disallow: /kompass
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /kompass
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /kompass
 
 User-agent: *
 Allow: /
+Disallow: /kompass
