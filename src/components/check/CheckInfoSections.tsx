@@ -92,9 +92,9 @@ const CheckInfoSections = () => (
               helfen, besser zu erkennen, was dein System gerade braucht.
             </p>
             <Button variant="ctaSecondary" size="sm" asChild>
-              <Link to="/buch/bonus/intern">
+              <Link to="/kompass">
                 <ArrowLeft className="w-3.5 h-3.5 mr-1" />
-                Zurück zum Bonusbereich
+                Zurück
               </Link>
             </Button>
           </CardContent>
