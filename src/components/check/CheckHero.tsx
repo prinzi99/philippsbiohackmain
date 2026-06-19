@@ -6,17 +6,16 @@ const CheckHero = () => (
   <section className="section-padding pb-8 md:pb-12">
     <div className="container-narrow space-y-6 text-center md:text-left">
       <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
-        Bonus-Tool
+        Kompass
       </Badge>
 
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-        Stoffwechsel-Reset Check
+        Stoffwechsel-Selbstcheck
       </h1>
 
       <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-        Dieser Check hilft dir dabei, typische Signale eines gestressten oder angepassten
-        Stoffwechsels einzuordnen. Er ersetzt keine Diagnose, kann dir aber zeigen, ob dein
-        System aktuell eher Stabilität oder Entlastung braucht.
+        Müdigkeit, Hunger und Stagnation sind keine persönlichen Fehler – sie sind Signale.
+        Dieser Check hilft dir zu verstehen, ob dein Stoffwechsel gerade unter Stress steht.
       </p>
 
       <p className="text-sm text-muted-foreground/80 leading-relaxed max-w-lg">

@@ -113,7 +113,7 @@ const CheckResults = ({ result }: Props) => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
           <Button variant="cta" size="lg" asChild>
-            <Link to="/kompass/kalorienrechner">
+            <Link to="/kompass">
               <Calculator className="w-4 h-4 mr-1" />
               Zum Kalorien- & Makro-Rechner
             </Link>

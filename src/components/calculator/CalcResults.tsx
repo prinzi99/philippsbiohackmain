@@ -8,16 +8,16 @@ const r = (n: number) => Math.round(n);
 const goalLabels = {
   maintenance: "Erhaltung",
   moderate: "Moderates Defizit (80 %)",
-  aggressive: "Aggressives Defizit (70 %)",
+  aggressive: "Stärkeres Defizit (nur kurzfristig)",
 };
 
 const goalHints: Record<string, string> = {
   maintenance:
-    "Du hältst dein aktuelles Gewicht. Das ist sinnvoll, wenn du dich auf Training und Leistung konzentrieren möchtest.",
+    "Du hältst dein aktuelles Gewicht. Sinnvoll, wenn du dich auf Training und Leistung konzentrieren möchtest.",
   moderate:
-    "Dein moderates Defizit ist ein sinnvoller Startpunkt, wenn du Fett verlieren möchtest, ohne unnötig aggressiv vorzugehen.",
+    "Ein moderates Defizit ist ein guter Startpunkt, wenn du Fett verlieren möchtest – ohne unnötig hart vorzugehen.",
   aggressive:
-    "Ein aggressives Defizit kann kurzfristig funktionieren, ist aber oft schwer im Alltag durchzuhalten. Beobachte Energie und Hunger genau.",
+    "Ein stärkeres Defizit kann kurzfristig funktionieren, ist im Alltag aber oft schwer durchzuhalten. Beobachte Energie und Hunger genau.",
 };
 
 interface Props {
@@ -36,7 +36,7 @@ const CalcResults = ({ result, input }: Props) => (
           <ResultCard icon={Flame} label="Grundumsatz (Ø)" value={`${r(result.bmrAvg)} kcal`} muted />
           <ResultCard icon={Zap} label="Erhaltungskalorien" value={`${r(result.tdee)} kcal`} />
           <ResultCard icon={TrendingDown} label="Moderates Defizit (80 %)" value={`${r(result.deficitModerate)} kcal`} />
-          <ResultCard icon={TrendingDown} label="Aggressives Defizit (70 %)" value={`${r(result.deficitAggressive)} kcal`} />
+          <ResultCard icon={TrendingDown} label="Stärkeres Defizit (nur kurzfristig)" value={`${r(result.deficitAggressive)} kcal`} />
           <ResultCard icon={Minus} label="Defizit −500 kcal" value={`${r(result.deficitMinus500)} kcal`} muted className="sm:col-span-2" />
         </div>
 
