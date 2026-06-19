@@ -140,6 +140,14 @@
   .container-wide {
     @apply container max-w-6xl;
   }
+
+  /* Warm accents (universell, geschlechtsneutral) – global verfügbar */
+  .bg-warm-cream { background-color: hsl(30 100% 97%); }
+  .bg-warm-beige { background-color: hsl(36 33% 96%); }
+  .bg-warm-apricot { background-color: hsl(22 100% 93%); }
+  .hero-warm-gradient {
+    background: linear-gradient(180deg, hsl(30 100% 97%) 0%, hsl(var(--background)) 100%);
+  }
 }
 
 /* Kompass sub-area: Foodpunk-inspired theme (Pink/Magenta + Teal)

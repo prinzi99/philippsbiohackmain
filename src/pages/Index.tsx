@@ -53,7 +53,7 @@ const Index = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-12 pb-8 lg:pt-20 lg:pb-12">
+      <section className="hero-warm-gradient pt-12 pb-8 lg:pt-20 lg:pb-12">
         <div className="container px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
@@ -110,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* What is Biohacking */}
-      <section className="py-12 lg:py-16 bg-secondary/50">
+      <section className="py-12 lg:py-16 bg-warm-beige">
         <div className="container px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="font-display text-xl font-bold text-foreground mb-4">
@@ -160,7 +160,7 @@ const Index = () => {
       </section>
 
       {/* Weitere Themen */}
-      <section className="py-12 lg:py-16 bg-secondary/50">
+      <section className="py-12 lg:py-16 bg-warm-cream">
         <div className="container px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="font-display text-xl font-bold text-foreground mb-2">
