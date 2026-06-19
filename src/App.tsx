@@ -29,6 +29,10 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/kompass" element={<Kompass />} />
+            <Route path="/kompass/stoffwechsel-check" element={<KompassStoffwechselCheck />} />
+            <Route path="/kompass/kalorienrechner" element={<KompassKalorienRechner />} />
+            <Route path="/kompass/biohacking-tools" element={<KompassBiohackingTools />} />
+            <Route path="/kompass/downloads" element={<KompassDownloads />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
