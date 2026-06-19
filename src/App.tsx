@@ -12,6 +12,7 @@ import Kompass from "./pages/Kompass";
 import KompassStoffwechselCheck from "./pages/KompassStoffwechselCheck";
 import KompassKalorienRechner from "./pages/KompassKalorienRechner";
 import KompassBiohackingTools from "./pages/KompassBiohackingTools";
+import KompassFAQ from "./pages/KompassFAQ";
 
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/kompass/stoffwechsel-check" element={<KompassStoffwechselCheck />} />
             <Route path="/kompass/kalorienrechner" element={<KompassKalorienRechner />} />
             <Route path="/kompass/biohacking-tools" element={<KompassBiohackingTools />} />
+            <Route path="/kompass/faq" element={<KompassFAQ />} />
             
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="*" element={<NotFound />} />
