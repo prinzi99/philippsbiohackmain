@@ -42,17 +42,21 @@ const faqItems: FAQItem[] = [
     a: (
       <div className="space-y-3">
         <p>Es gibt mehrere Wege – von der Schätzung bis zur technischen Messung:</p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li><strong>Visuell schätzen:</strong> Am einfachsten vergleichst du dich mit Referenzbildern im Netz. Das reicht für den Anfang und kostet nichts.</li>
+        <ul className="list-disc pl-5 space-y-2">
           <li>
-            <strong>Falzmessung (Caliper):</strong> Mit einer Hautfalzange misst du die Fett­dicke an definierten Stellen und berechnest daraus den Körperfettanteil. Günstig und für zu Hause gut geeignet.
+            <strong>Visuell schätzen:</strong> Am einfachsten vergleichst du dich mit Referenzbildern im Netz. Das reicht für den Anfang und kostet nichts.
+          </li>
+          <li>
+            <strong>Falzmessung (Caliper):</strong> Mit einer Hautfalzange misst du die Fett­dicke an definierten Stellen und berechnest daraus den Körperfettanteil. Günstig und für zu Hause gut geeignet. <span className="block mt-1 text-sm text-muted-foreground">Wichtige Grenze: Sie misst nur das Unterhautfett und sagt nichts über das Viszeralfett (Bauchfett um die Organe) aus. Bei sehr hohem Körperfettanteil oder Übergewicht kann die Hautfalte zudem so dick werden, dass sie nicht mehr in die Zange passt – dann wird die Methode ungenau oder unmöglich durchzuführen.</span>
             <span className="affiliate-link-caliper block mt-1 text-xs text-muted-foreground italic">(Affiliate-Link folgt)</span>
           </li>
           <li>
             <strong>Elektroimpedanzwaage:</strong> Misst den Widerstand des Körpers und schätzt Fett- und Muskelanteil. Sehr komfortabel, aber Werte können durch Wasser- und Salzhaushalt schwanken – am besten immer unter gleichen Bedingungen (morgens, nüchtern) messen.
             <span className="affiliate-link-waage block mt-1 text-xs text-muted-foreground italic">(Affiliate-Link folgt)</span>
           </li>
-          <li><strong>Beim Fachpersonal:</strong> Viele Ärzte, Ernährungsberater und Sportwissenschaftler bieten professionelle Körperfett-Messungen an – z. B. per Caliper oder bioelektrische Impedanzanalyse mit hochwertigeren Geräten.</li>
+          <li>
+            <strong>Beim Fachpersonal:</strong> Viele Ärzte, Ernährungsberater und Sportwissenschaftler bieten professionelle Körperfett-Messungen an – z. B. per Caliper mit mehr Messpunkten, bioelektrische Impedanzanalyse mit hochwertigeren Geräten oder DEXA-Scan. Dort bekommst du auch eine Einschätzung zur Fettverteilung.
+          </li>
         </ul>
       </div>
     ),
