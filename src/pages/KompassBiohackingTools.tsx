@@ -18,8 +18,8 @@ const tiers = [
         hint: "Du brauchst nur eine App. Such dir aus, was dir gefällt.",
         items: [
           { name: "MyFitnessPal", desc: "Am bekanntesten, riesige Datenbank.", href: "https://go.philippsbiohack.de/myfitnesspal-de" },
-          { name: "Yazio", desc: "Deutsch, übersichtlich." },
-          { name: "Cronometer", desc: "Sehr detailliert, für Fortgeschrittene." },
+          { name: "Yazio", desc: "Deutsch, übersichtlich.", href: "https://go.philippsbiohack.de/yazio-de" },
+          { name: "Cronometer", desc: "Sehr detailliert, für Fortgeschrittene.", href: "https://go.philippsbiohack.de/cronometer-de" },
         ],
       },
       {
