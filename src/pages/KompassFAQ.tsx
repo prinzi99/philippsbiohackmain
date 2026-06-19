@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, HelpCircle } from "lucide-react";
 import Header from "@/components/Header";
