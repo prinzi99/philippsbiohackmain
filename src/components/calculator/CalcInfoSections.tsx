@@ -104,9 +104,9 @@ const CalcInfoSections = () => (
               reagiert.
             </p>
             <Button variant="ctaSecondary" asChild>
-              <Link to="/buch/bonus/intern">
+              <Link to="/kompass">
                 <ArrowLeft className="w-4 h-4" />
-                Zurück zum Bonusbereich
+                Zurück
               </Link>
             </Button>
           </CardContent>
