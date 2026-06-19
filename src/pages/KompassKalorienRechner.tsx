@@ -6,6 +6,7 @@ import CalcInputForm from "@/components/calculator/CalcInputForm";
 import CalcResults from "@/components/calculator/CalcResults";
 import CalcTransparency from "@/components/calculator/CalcTransparency";
 import CalcInfoSections from "@/components/calculator/CalcInfoSections";
+import KompassCrossNav from "@/components/kompass/KompassCrossNav";
 import { calculateAll, type CalcInput, type CalcResult } from "@/lib/calorieCalculator";
 
 const KompassKalorienRechner = () => {
@@ -42,6 +43,7 @@ const KompassKalorienRechner = () => {
         )}
 
         <CalcInfoSections />
+        <KompassCrossNav current="rechner" />
       </main>
 
       <Footer />

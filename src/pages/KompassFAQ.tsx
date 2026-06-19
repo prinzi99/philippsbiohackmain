@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, HelpCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import KompassCrossNav from "@/components/kompass/KompassCrossNav";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -86,7 +87,7 @@ const KompassFAQ = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-8 pb-16">
+        <section className="px-5 md:px-8 pb-8">
           <div className="container-narrow">
             <Button variant="outline" asChild className="w-full sm:w-auto">
               <Link to="/kompass">
@@ -95,6 +96,8 @@ const KompassFAQ = () => {
             </Button>
           </div>
         </section>
+
+        <KompassCrossNav current="faq" />
       </main>
 
       <Footer />

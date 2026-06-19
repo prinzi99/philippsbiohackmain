@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import KompassCrossNav from "@/components/kompass/KompassCrossNav";
 import BiohackingHero from "@/components/biohacking/BiohackingHero";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -166,6 +167,8 @@ const KompassBiohackingTools = () => {
             </Button>
           </div>
         </section>
+
+        <KompassCrossNav current="tools" />
 
         <section className="px-5 md:px-8 pb-16 md:pb-20">
           <div className="container-narrow">

@@ -5,6 +5,7 @@ import CheckHero from "@/components/check/CheckHero";
 import CheckQuestions from "@/components/check/CheckQuestions";
 import CheckResults from "@/components/check/CheckResults";
 import CheckInfoSections from "@/components/check/CheckInfoSections";
+import KompassCrossNav from "@/components/kompass/KompassCrossNav";
 import { evaluateCheck, questions, type CheckAnswers, type CheckResult } from "@/lib/metabolicCheck";
 
 const KompassStoffwechselCheck = () => {
@@ -63,6 +64,7 @@ const KompassStoffwechselCheck = () => {
         )}
 
         <CheckInfoSections />
+        <KompassCrossNav current="selbstcheck" />
       </main>
 
       <Footer />
