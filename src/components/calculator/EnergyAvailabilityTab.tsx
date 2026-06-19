@@ -92,6 +92,15 @@ const EnergyAvailabilityTab = () => {
                   Beispiel: 70 kg × (1 − 0,25) = 52,5 kg FFM.
                 </p>
                 <p>
+                  <Link
+                    to="/kompass/faq#koerperfett"
+                    className="inline-flex items-center gap-1 text-xs text-primary hover:underline font-medium"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    Wie bestimme ich meinen Körperfettanteil?
+                  </Link>
+                </p>
+                <p>
                   <strong className="text-foreground">Schwellenwert:</strong> 30 kcal/kg FFM. Alles darunter
                   löst hormonelle Anpassungen aus.
                 </p>
