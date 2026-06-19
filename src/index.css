@@ -8,30 +8,30 @@
 
 @layer base {
   :root {
-    /* Core Colors */
-    --background: 220 20% 97%;
-    --foreground: 220 25% 10%;
+    /* Core Colors – Foodpunk-inspired (Pink/Magenta + Teal) */
+    --background: 30 20% 97%;
+    --foreground: 220 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
+    --card-foreground: 220 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 10%;
+    --popover-foreground: 220 20% 20%;
 
-    /* Primary - Deep Blue for Trust */
-    --primary: 220 70% 25%;
+    /* Primary - Vibrant Magenta/Pink */
+    --primary: 330 85% 50%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Slate for Content */
-    --secondary: 220 15% 92%;
-    --secondary-foreground: 220 25% 15%;
+    /* Secondary - Teal */
+    --secondary: 170 60% 45%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Muted */
-    --muted: 220 15% 95%;
+    --muted: 220 15% 94%;
     --muted-foreground: 220 10% 45%;
 
-    /* Accent - Vibrant Orange for CTAs */
-    --accent: 25 95% 53%;
+    /* Accent - Teal for CTAs */
+    --accent: 170 65% 42%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive */
@@ -39,31 +39,31 @@
     --destructive-foreground: 0 0% 100%;
 
     /* UI Elements */
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 25 95% 53%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 330 85% 50%;
 
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 70% 25%) 0%, hsl(220 60% 35%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 95% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(330 85% 50%) 0%, hsl(340 80% 55%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(170 65% 42%) 0%, hsl(175 60% 48%) 100%);
 
     /* Shadows */
     --shadow-sm: 0 2px 8px -2px hsl(220 25% 10% / 0.08);
     --shadow-md: 0 8px 24px -8px hsl(220 25% 10% / 0.12);
     --shadow-lg: 0 16px 48px -12px hsl(220 25% 10% / 0.18);
-    --shadow-cta: 0 8px 32px -8px hsl(25 95% 53% / 0.4);
+    --shadow-cta: 0 8px 32px -8px hsl(170 65% 42% / 0.4);
 
     /* Sidebar (required by shadcn) */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary: 330 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 330 85% 50%;
   }
 
   .dark {
