@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Badge } from "@/components/ui/badge";
-import { Activity, AlertTriangle, CheckCircle2, Info } from "lucide-react";
+import { Activity, AlertTriangle, CheckCircle2, Info, ExternalLink } from "lucide-react";
 
 type FfmMode = "bodyfat" | "direct";
 
@@ -89,6 +90,15 @@ const EnergyAvailabilityTab = () => {
                 <p>
                   <strong className="text-foreground">FFM</strong> = Körpergewicht × (1 − Körperfettanteil ÷ 100).
                   Beispiel: 70 kg × (1 − 0,25) = 52,5 kg FFM.
+                </p>
+                <p>
+                  <Link
+                    to="/kompass/faq#koerperfett"
+                    className="inline-flex items-center gap-1 text-xs text-primary hover:underline font-medium"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    Wie bestimme ich meinen Körperfettanteil?
+                  </Link>
                 </p>
                 <p>
                   <strong className="text-foreground">Schwellenwert:</strong> 30 kcal/kg FFM. Alles darunter
