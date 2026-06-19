@@ -6,11 +6,11 @@ const BiohackingHero = () => (
   <section className="section-padding pb-8 md:pb-12">
     <div className="container-narrow space-y-6 text-center md:text-left">
       <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
-        Bonusbereich – Tools
+        Kompass
       </Badge>
 
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-        Biohacking & Tools
+        Empfohlene Tools
       </h1>
 
       <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">

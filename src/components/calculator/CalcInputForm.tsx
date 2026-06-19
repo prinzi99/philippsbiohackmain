@@ -183,7 +183,7 @@ const CalcInputForm = ({ onCalculate }: Props) => {
               {[
                 { value: "maintenance", label: "Erhaltung", desc: "Kalorien auf Erhaltungsniveau." },
                 { value: "moderate", label: "Moderates Defizit", desc: "80 % des Bedarfs – empfohlener Startpunkt." },
-                { value: "aggressive", label: "Aggressives Defizit", desc: "70 % des Bedarfs – nur kurzfristig sinnvoll." },
+                { value: "aggressive", label: "Stärkeres Defizit (nur kurzfristig)", desc: "70 % des Bedarfs – nur kurzfristig sinnvoll." },
               ].map((opt) => (
                 <label
                   key={opt.value}

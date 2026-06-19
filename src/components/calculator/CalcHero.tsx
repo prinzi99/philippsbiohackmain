@@ -6,7 +6,7 @@ const CalcHero = () => (
   <section className="section-padding pb-8 md:pb-12">
     <div className="container-narrow space-y-6 text-center md:text-left">
       <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
-        Bonus-Tool
+        Kompass
       </Badge>
 
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
@@ -14,14 +14,12 @@ const CalcHero = () => (
       </h1>
 
       <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-        Dieses Tool hilft dir dabei, deinen geschätzten Kalorienbedarf und eine sinnvolle
-        Makroverteilung zu berechnen. Die Ergebnisse sind kein Dogma, sondern ein fundierter
-        Startpunkt.
+        Ein warmer Startpunkt, kein Dogma. Trag deine Werte ein und erhalte Alltagszahlen,
+        mit denen du arbeiten kannst.
       </p>
 
       <p className="text-sm text-muted-foreground/80 leading-relaxed max-w-lg">
-        <strong>Wichtig:</strong> Die Berechnung liefert Schätzwerte. Entscheidend ist immer,
-        wie dein Körper in der Praxis reagiert.
+        💡 <strong>Tipp:</strong> Beobachte deine Werte zwei Wochen, bevor du etwas änderst.
       </p>
 
       <Card className="border-border/40 bg-card/80 shadow-none max-w-md md:mx-0 mx-auto">
