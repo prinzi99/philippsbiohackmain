@@ -9,6 +9,10 @@ import CookieSettingsButton from "@/components/CookieSettingsButton";
 import Index from "./pages/Index";
 import Impressum from "./pages/Impressum";
 import Kompass from "./pages/Kompass";
+import KompassStoffwechselCheck from "./pages/KompassStoffwechselCheck";
+import KompassKalorienRechner from "./pages/KompassKalorienRechner";
+import KompassBiohackingTools from "./pages/KompassBiohackingTools";
+import KompassDownloads from "./pages/KompassDownloads";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 
