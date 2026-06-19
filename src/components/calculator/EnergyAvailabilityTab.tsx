@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Badge } from "@/components/ui/badge";
-import { Activity, AlertTriangle, CheckCircle2, Info } from "lucide-react";
+import { Activity, AlertTriangle, CheckCircle2, Info, ExternalLink } from "lucide-react";
 
 type FfmMode = "bodyfat" | "direct";
 
