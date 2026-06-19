@@ -59,12 +59,12 @@ const tiers = [
           {
             name: "Auswahl an guten Körperfettwaagen",
             desc: "Elektroimpedanzwaagen für zu Hause – einfach, schnell und reproduzierbar.",
-            href: "#",
+            href: "https://go.philippsbiohack.de/amzn-koerperfettwaagen",
           },
           {
             name: "Caliper Körperfettzange",
             desc: "Für die manuelle Falzmessung – präzise, wenn du die Technik beherrschst.",
-            href: "#",
+            href: "https://go.philippsbiohack.de/amzn-caliper",
           },
         ],
       },
