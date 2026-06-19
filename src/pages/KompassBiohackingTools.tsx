@@ -186,7 +186,7 @@ const KompassBiohackingTools = () => {
                   ))}
                 </ul>
                 <Button variant="cta" size="lg" asChild>
-                  <a href="https://foodpunk.de" target="_blank" rel="noopener noreferrer">
+                  <a href="https://go.philippsbiohack.de/kompass-fp" target="_blank" rel="noopener noreferrer">
                     Mehr über Foodpunk erfahren
                     <ExternalLink className="w-4 h-4 ml-1" />
                   </a>
