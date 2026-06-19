@@ -113,15 +113,15 @@ const CheckResults = ({ result }: Props) => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
           <Button variant="cta" size="lg" asChild>
-            <Link to="/buch/bonus/intern/kalorienrechner">
+            <Link to="/kompass/kalorienrechner">
               <Calculator className="w-4 h-4 mr-1" />
               Zum Kalorien- & Makro-Rechner
             </Link>
           </Button>
           <Button variant="ctaSecondary" size="lg" asChild>
-            <Link to="/buch/bonus/intern">
+            <Link to="/kompass">
               <ArrowLeft className="w-4 h-4 mr-1" />
-              Zurück zum Bonusbereich
+              Zurück
             </Link>
           </Button>
         </div>
