@@ -14,20 +14,12 @@ import { useUtmParams } from "@/hooks/use-utm-params";
 
 const topTopics = [
 {
-  title: "Stoffwechsel-Buch",
-  description: "Die wichtigsten Hebel für deinen Stoffwechsel – kompakt und alltagstauglich in einem Buch.",
-  buttonText: "Zum Buch",
-  href: "https://stoffwechsel.philippsbiohack.de/buch?utm_source=hub",
-  badge: "Neu",
-  image: buchCover,
-  featured: true
-},
-{
   title: "Stoffwechsel-Quiz (2 Minuten)",
   description: "Finde heraus, was deinen Stoffwechsel aktuell ausbremst.",
   buttonText: "Ergebnis holen",
   href: "https://stoffwechsel.philippsbiohack.de?utm_source=hub",
-  badge: "Beliebt"
+  badge: "Beliebt",
+  featured: true
 },
 {
   title: "Schlechte Luft im Homeoffice?",
